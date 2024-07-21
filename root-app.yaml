@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  creationTimestamp: "2024-07-21T13:25:26Z"
+  generation: 1
+  name: root
+  namespace: argocd
+  resourceVersion: "37248"
+  uid: 2290f5f2-ca45-4a43-b6fd-17ee3cd846c7
+spec:
+  clusterResourceWhitelist:
+    - group: "*"
+      kind: "*"
+  destinations:
+    - namespace: "*"
+      server: "*"
+  sourceRepos:
+    - "https://github.com/btwseeu78/argo-cd-by-argocd.git"
+status: {}
